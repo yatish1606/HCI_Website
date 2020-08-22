@@ -201,7 +201,7 @@ const hotelsList = [
 
 window.onload = function runOnLoad() {
     
-    localStorage.setItem('hotelList', JSON.stringify(hotelsList))
-    console.log(JSON.parse(localStorage.getItem('hotelList')))
+    sessionStorage.setItem('hotelList', JSON.stringify(hotelsList))
+    console.log(JSON.parse(sessionStorage.getItem('hotelList')))
 }
 
