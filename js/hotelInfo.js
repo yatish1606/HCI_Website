@@ -17,10 +17,10 @@ window.onload = function runOnLoad() {
 
     setStyle($overview)
 
-    const hotelInfo = JSON.parse(sessionStorage.getItem('hotelData'))
+    const hotelInfo = JSON.parse(localStorage.getItem('hotelData'))
     console.log(hotelInfo)
 
-    const allHotelsInfo = JSON.parse(sessionStorage.getItem('hotelList'))
+    const allHotelsInfo = JSON.parse(localStorage.getItem('hotelList'))
     console.log(allHotelsInfo)
     
     const suggestionHotels = allHotelsInfo.filter(hotel => hotel.name !== hotelInfo.name)
