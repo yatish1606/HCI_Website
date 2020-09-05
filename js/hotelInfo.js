@@ -61,6 +61,7 @@ window.onload = function runOnLoad() {
         $reviews.style.cssText = inactiveStyle
         $overview.style.cssText = inactiveStyle
         $more.style.cssText = inactiveStyle
+        window.scrollTo(0,2500)
     })
 
     $more.addEventListener('click', function () {
@@ -69,6 +70,7 @@ window.onload = function runOnLoad() {
         $reviews.style.cssText = inactiveStyle
         $faq.style.cssText = inactiveStyle
         $overview.style.cssText = inactiveStyle
+        window.scrollTo(0,2800)
     })
 }
 

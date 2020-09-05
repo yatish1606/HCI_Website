@@ -1,5 +1,5 @@
 @import 'https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;700;800;900&display=swap';
-@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;800;900&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap';
 
 
 @keyframes fadeIn {
@@ -544,7 +544,6 @@ html, body {
 
 .hotel-content {
     width: 80%;
-    height: 7000px;
     background-color: transparent;
     margin: 20px auto;
     display: flex;
@@ -616,7 +615,7 @@ html, body {
     padding: 20px;
 }
 .overview-box-left h3 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 1.17em;
     font-weight: bold;
     color: #2a2b2b;
@@ -758,7 +757,7 @@ html, body {
 }
 
 .location-box h3 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 1.17em;
     font-weight: bold;
     color: #2a2b2b;
@@ -870,7 +869,7 @@ html, body {
 }
 
 .review-box-titlebar h3 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 1.17em;
     font-weight: bold;
     color: #2a2b2b;
@@ -1221,7 +1220,7 @@ progress[value]::-webkit-progress-value {
 }
 
 .faq-box-titlebar h3 {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 1.17em;
     font-weight: bold;
     color: #2a2b2b;
@@ -1241,15 +1240,20 @@ progress[value]::-webkit-progress-value {
     transition: 0.4s;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-right: 30px;
 }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .accordion:hover {
+  .accordion:hover {
     background-color: #f6f6f6;
+  }
+
+  .active {
+      font-weight: 600;
   }
   
   /* Style the accordion panel. Note: hidden by default */
@@ -1269,6 +1273,8 @@ progress[value]::-webkit-progress-value {
     float: right;
     margin-left: 5px;
     transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
   }
   
   .active:after {
@@ -1279,6 +1285,7 @@ progress[value]::-webkit-progress-value {
     margin-left: 5px;
     transform: rotate(90deg);
     transition: 0.3s;
+    font-weight: 400;
   }
 
   .panel p {
@@ -1287,3 +1294,165 @@ progress[value]::-webkit-progress-value {
       color: #484848;
       font-weight: 400;
   }
+
+.more-box {
+    width: calc(100% - 20px);
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.more-item {
+    width: calc(100% - 40px);
+    margin: 5px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.more-left {
+    width: 11%;
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.more-right {
+    display: flex;
+    flex-direction: column;
+    width: 84%;
+}
+
+.more-right h4 {
+    font-family: 'Nunito Sans';
+    font-weight: 700;
+    color: #484848;
+    font-size: 17px;
+    margin: 0;
+    padding:0
+}
+
+.more-right p {
+    font-family: 'Nunito Sans';
+    font-weight: 400;
+    color: #484848;
+    font-size: 13px;
+    margin: 0;
+    padding:0
+}
+
+.more-left img {
+    width: 40px;
+    height: 40px;
+}
+
+.not-right {
+    width: calc(100% - 20px);
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: row;
+    align-items: flex-start;
+    overflow: hidden;
+    height: 150px;
+}
+
+.not-right-left {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.not-right-left h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #484848;
+    padding: 0;
+    margin: 0;
+}
+
+.not-right-left p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #484848;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.btn {
+    width:100px;
+    height: 35px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FF5A5F;
+    border: 2px solid #FF5A5F;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Montserrat', sans-serif;
+    font-size : 13px;
+    text-transform: capitalize;
+    font-weight: 600;
+    border-radius: 40px;
+    color:#fff;
+    margin:0;
+    transition: 0.3s;
+    padding-left: 15px;
+}
+.btn:hover {
+    background-color:#FF5A5F;
+    border: 1px solid #FF5A5F;
+    transition: 0.3s;
+}
+.btn img {
+    width:12px;
+    height: 12px;
+    transform: rotate(-90deg);
+    margin-right: 10px;
+    transition: 0.3s
+}
+
+.not-right-right {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.not-right-right img {
+    width: 80px;
+    height: 80px;
+}
+
+.arrow {
+    content: '\203A'; /* Unicode character for "plus" sign (+) */
+    font-size: 33px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+    transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-left: 2%;
+    cursor: pointer;
+    transition: 0.3s ease-in
+}
+.arrow:hover {
+    color: #FF5A5F;
+    transition: 0.3s ease-in
+}
